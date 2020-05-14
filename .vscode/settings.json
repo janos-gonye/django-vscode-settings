@@ -1,0 +1,20 @@
+{
+    "python.pythonPath": "venv/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django",
+        "--disable=C0114,C0115,C0116,C0301",
+        // C0114 (missing-module-docstring)
+        // C0115 (missing-class-docstring)
+        // C0116 (missing-function-docstring)
+        // C0301 (too long line warning)
+        "--max-line-length=79"
+    ],
+    "files.exclude": {
+        "**/*.pyc": true,
+        "**/__pycache__": true
+    },
+    "editor.rulers": [79]
+}
