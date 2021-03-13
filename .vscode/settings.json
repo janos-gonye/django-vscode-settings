@@ -10,7 +10,9 @@
         // C0115 (missing-class-docstring)
         // C0116 (missing-function-docstring)
         // C0301 (too long line warning)
-        "--max-line-length=79"
+        "--max-line-length=79",
+        // TODO: Add here your Django project name
+        "--django-settings-module=<your-project-name>.settings"
     ],
     "files.exclude": {
         "**/*.pyc": true,
